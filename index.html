@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HOJA DE VIDA</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="caja">
+		<form action="procesar.php" method="get">		
+			<h1>HOJA DE VIDA</h1>
+			<div class="foto">
+				<img src="img/hv2.jpg" alt="">
+			</div>
+			<div class="content1">
+				ciudad:<input type="text" name="ciudad">
+				Fecha:<input type="date" name="fecha">
+				empleo o cargo solicitado:<input type="text" name="empleo">
+				Codigo de cargo:<input type="text" name="Codigo">			
+			</div>
+			
+			<h1>DATOS PERSONALES</h1>
+
+			<div class="content2">
+				Primer apellido:<input type="text" name="primer">
+				Segundo apellido:<input type="text" name="segundo">
+				Nombres:<input type="text" name="nombres">
+				Profesion u ocupacion:<input type="text" name="profesion">
+				Años de experiencia:<input type="text" name="anios">
+				Aspiracion salarial:<input type="text" name="salario">		
+				Lugar de nacimiento:<input type="text" name="Lugar">
+				Fecha de nacimiento:<input type="text" name="fechanac">
+				Estado civil:<input type="text" name="estado">
+				Direccion:<input type="text" name="dirreciondomi">
+				Barrio:<input type="text" name="barrio">
+				Telefono:<input type="text" name="telefono1">
+				Cedula de ciudadania:<input type="text" name="cedula">
+				Libreta militar:<input type="text" name="libreta">
+				Expedida en:<input type="text" name="expedicion">
+				Distrito N°:<input type="text" name="distrito">
+				Clase:<input type="text" name="clase">
+				Licencia de conduccion:<input type="text" name="licencia">
+				<label for="Vivieda">Vivienda propia?</label>
+				<label for="sip">Si</label>
+				<input type="radio" name="vivienda">
+				<label for="no_li">No</label>
+				<input type="radio" name="vivienda">
+				<label for="arrendador">Nombre del arrendador</label>
+				<input type="text" name="arrendador">
+				Telefono:<input type="text" name="telefono2">
+				<label for="valor_arr">Valor del arriendo</label>
+				<input type="text" name="valor_arr" placeholder="$">
+				<label for="Viviena">Esta trabajando actualmente?</label>
+				<label for="si_tra">Si</label>
+				<input type="radio" name="si_tra">
+				<label for="no">No</label>
+				<input type="radio" name="si_tra">
+				En que empresa:<input type="text" name="empresa">
+				<label for="empleado">Empleado</label>
+				<input type="checkbox" value="Si" name="empleado">
+				<label for="independiente">Independiente</label>
+				<input type="checkbox" value="checkbox" name="independiente">
+				<label for="contrato">Tipo de contrato</label>
+				<input type="text" name="contrato">
+			</div>
+
+			<h1>EDUCACION Y APTITUDES</h1>
+
+			<div class="content">
+				Primaria:<input type="text" name="primaria">
+				Establecimiento:<input type="text" name="Establecimiento">Ciudad:<input type="text" name="ciudad2">		
+				<label for="grado">Ultimo grado cursado</label>
+				<select name="grado_pri">
+					<option value="pri">Primero</option>
+					<option value="seg">Segundo</option>
+					<option value="ter">Tercero</option>
+					<option value="cuar">Cuarto</option>
+					<option value="quin">Quinto</option>
+				</select>
+				Fecha:<input type="date" name="fechaprimaria">
+				Bachillerato:<input type="text" name="bachillerato">
+				Establecimiento:<input type="text" name="Establecimiento1">
+				<label for="ciudad">Ciudad</label>
+				<select name="ciudad_bac">
+					<option value="Cali">Cali</option>
+					<option value="Medellin">Medellin</option>
+					<option value="Bogota">Bogota</option>
+					<option value="Barranquilla">Barranquilla</option>
+				</select>
+				<label for="grado">Ultimo grado cursado</label>
+				<select name="grado_bac">
+					<option value="sex">Sexto</option>
+					<option value="sep">Septimo</option>
+					<option value="oct">Octavo</option>
+					<option value="nov">Noveno</option>
+					<option value="dec">Decimo</option>
+					<option value="once">Once</option>
+				</select>
+				fecha:<input type="date" name="fechabachillerato">
+				Educacion superior:<input type="text" name="superior">
+				Establecimiento:<input type="text" name="Establecimiento2">
+				<label for="ciudad">Ciudad</label>
+				<select name="ciudad_sup">
+					<option value="Cali">Cali</option>
+					<option value="Medellin">Medellin</option>
+					<option value="Bogota">Bogota</option>
+					<option value="Barranquilla">Barranquilla</option>
+				</select>
+				Años cursados:<input type="text" name="anioscursados">
+				Fecha:<input type="date" name="fechasuperior">
+				Titulo obtenido:<input type="text" name="Titulobt">
+				<label for="formacion">Formacion: </label>
+				<label for="tecnico">Tecnico</label>
+				<input type="radio" name="op1">
+				<label for="tecnologo">Tecnologo</label>
+				<input type="radio" name="op2">
+				<label for="profesional">Profesional</label>
+				<input type="radio" name="op3">
+				Que estudios realiza recientemente:<input type="text" name="est_realiza">
+				Horario:<input type="text" name="horario">
+			</div>
+
+			<h1>EXPERIENCIA LABORAL</h1>
+
+			<div class="content">
+				Nombre de la última o actual empresa:<input type="text" name="actual">
+				Direccion:<input type="text" name="direcempresa">
+				Telefono:<input type="text" name="tel_empresa">
+				Nombre de su jefe inmediato:<input type="text" name="jefe">
+				Cargo desempeñado por usted:<input type="text" name="cargo">
+				Funciones realizadas<textarea name="funciones" rows="3" cols="30"></textarea>
+
+				Fecha de ingreso:<input type="date" name="ingreso">
+				Fecha de retiro:<input type="date" name="retiro">
+				Sueldo inical:<input type="text" name="inical">
+				Sueldo final:<input type="text" name="final">
+				<br>
+				Motivo del retiro
+				<textarea name="motivo" rows="3" cols="30">
+				</textarea>
+				<hr>
+				Nombre de la empresa:<input type="text" name="nombreempre">
+				Direccion:<input type="text" name="direcempre">
+				Telefono:<input type="text" name="cell">
+				Nombre de su jefe inmediato:<input type="text" name="nomjefe">
+				Cargo desempeñado por usted:<input type="text" name="cargo1">
+				Funciones realizadas<textarea name="funciones2" rows="3" cols="30"></textarea>
+				Fecha de ingreso:<input type="date" name="ingreso1">
+				Fecha de retiro:<input type="date" name="retiro1">
+				Sueldo inical:<input type="text" name="inical1">
+				Sueldo final:<input type="text" name="final1">
+				<br>
+				Motivo del retiro
+				<textarea name="motivo1" rows="3" cols="30">
+				</textarea>
+				<hr>
+				Nombre de la empresa:<input type="text" name="nombreempre1">
+				Direccion:<input type="text" name="direcempre1">
+				Telefono:<input type="text" name="telempre">
+				Nombre de su jefe inmediato:<input type="text" name="nomjefe1">
+				Cargo desempeñado por usted:<input type="text" name="cargo2">
+				Funciones realizadas<textarea name="funciones3" rows="3" cols="30"></textarea>
+				Fecha de ingreso:<input type="date" name="ingreso2">
+				Fecha de retiro:<input type="date" name="retiro2">
+				Sueldo inical:<input type="text" name="inical2">
+				Sueldo final:<input type="text" name="final2">
+				<br>
+				Motivo del retiro
+				<textarea name="motivo2" rows="3" cols="30"></textarea>
+			</div>
+
+			<h1>TRAYECTORIA POR EMPRESAS</h1>
+			<div class="content">
+				(Marque con una (X) en que clase de empresas ha trabajado o tiene experiencia)
+
+				<label for="agricultura">AGRICULTURA</label>
+				<input type="checkbox" name="agricultura">
+				<label for="textiles">Textiles y Confecciones</label>
+				<input type="checkbox" name="textiles">
+				<label for="metalurgia">Metalurgia</label>
+				<input type="checkbox" name="metalurgia">
+				<label for="comercio">COMERCIO</label>
+				<input type="checkbox" name="comercio">
+				<label for="salud">SALUD</label>
+				<input type="checkbox" name="salud">
+				<label for="ganaderia">GANADERIA/AVICULTURA</label>
+				<input type="checkbox" name="ganaderia">
+				<label for="cuero">Cuero y Calzado</label>
+				<input type="checkbox" name="cuero">
+				<label for="maquinaria">Maquinaria</label>
+				<input type="checkbox" name="maquinaria">
+				<label for="hotel">HOTELES Y RESTAURANTES</label>
+				<input type="checkbox" name="hotel">
+				<label for="educacion">EDUCACION</label>
+				<input type="checkbox" name="educacion">
+				<label for="mineria">MINERIA</label>
+				<input type="checkbox" name="mineria">
+				<label for="carton">Papel y Carton</label>
+				<input type="checkbox" name="carton">
+				<label for="automotores">Automotores</label>
+				<input type="checkbox" name="automotores">
+				<label for="transporte">TRANSPORTE</label>
+				<input type="checkbox" name="transporte">
+				<label for="seguros">SEGUROS</label>
+				<input type="checkbox" name="seguros">
+				<label for="petroleo">PETROLEO/GASOLINA</label>
+				<input type="checkbox" name="petroleo">
+				<label for="editorial">Editorial y Artes Graficas</label>
+				<input type="checkbox" name="editorial">
+				<label for="muebles">Muebles</label>
+				<input type="checkbox" name="muebles">
+				<label for="bodega">BODEGAJE</label>
+				<input type="checkbox" name="bodega">
+				<label for="vigilancia">VIGILANCIA</label>
+				<input type="checkbox" name="vigilancia">
+				<label for="industria">INDUSTRIA</label>
+				<input type="checkbox" name="industria">
+				<label for="quimico">Quimico y Farmaceutica</label>
+				<input type="checkbox" name="quimico">
+				<label for="reciclaje">RECICLAJE</label>
+				<input type="checkbox" name="reciclaje">
+				<label for="comunicaciones">COMUNICACIONES</label>
+				<input type="checkbox" name="comunicaciones">
+				Otro:<input type="text" name="final">
+				<label for="alimentos">ALIMENTOS Y BEBIDAS</label>
+				<input type="checkbox" name="alimentos">
+				<label for="caucho">Caucho y Plastico</label>
+				<input type="checkbox" name="caucho">
+				<label for="electricidad">ELECTRICIDAD/GAS/AGUA</label>
+				<input type="checkbox" name="electricidad">
+				<label for="finca">FINCA RAIZ</label>
+				<input type="checkbox" name="finca">
+				<label for="tabaco">Tabaco</label>
+				<input type="checkbox" name="tabaco">
+				<label for="vidrio">Vidrio, Ceramica y Cemento</label>
+				<input type="checkbox" name="vidrio">
+				<label for="construccion">CONSTRUCCION</label>
+				<input type="checkbox" name="construccion">
+				<label for="informatico">INFORMATICO</label>
+				<input type="checkbox" name="informatico">
+			</div>
+
+			<h1>INFORMACION FAMILIAR</h1>
+
+			<div class="content">
+				Nombre de esposo(a) o compañero(a):<input type="text" name="esposo_a">
+				Profesion u oficio:<input type="text" name="oficio1">
+				Empresa donde trabaja:<input type="text" name="trabaja1">
+				Cargo actual:<input type="text" name="cargo_act">
+				Direccion:<input type="text" name="direcfam">		
+				Telefono:<input type="text" name="telefam">
+				<label for="ciudad">Ciudad</label>
+				<select name="ciudadpareja">
+					<option value="Cali">Cali</option>
+					<option value="Medellin">Medellin</option>
+					<option value="Bogota">Bogota</option>
+					<option value="Barranquilla">Barranquilla</option>
+				</select>
+
+				<label for="personas">No de personas que dependen economicamente del solicitante</label>
+				<select name="personas">
+					<option value="uno">uno</option>
+					<option value="dos">Dos</option>
+					<option value="tres">Tres</option>
+					<option value="mas">Mas de tres</option>
+				</select>
+				Parentesco:<input type="text" name="Parentesco">
+				Edades:<input type="text" name="edades_fam">
+				Nombre del padre:<input type="text" name="padre">
+				Nombre de la madre:<input type="text" name="madre">
+				Profesion u ocupacion:<input type="text" name="ocupa_fam">
+			</div>
+
+			<h1>REFERENCIAS PERSONALES</h1>
+			
+			<div class="content">
+				(indique dos nombres de personas distintas a familiares o empleadores)<br>
+				Nombre:<input type="text" name="nombreref">
+				Ocupacion:<input type="text" name="ocupacion01">
+				Direccion:<input type="text" name="direccion01">
+				Telefono:<input type="text" name="telefono01">
+				Nombre:<input type="text" name="nombre02">
+				Ocupacion:<input type="text" name="ocupacion02">
+				Direccion:<input type="text" name="direccion02">
+				Telefono:<input type="text" name="telefono02">
+			</div>
+
+			<h1>INFORMACION ADICIONAL</h1>
+
+			<div class="content">
+				<label for="empleo">Quien le sugirio solicitar empleo en esta empresa: </label>
+				<label for="anuncio">Anuncio</label>
+				<input type="checkbox" name="anuncio">
+				<label for="amigo">Amigo</label>
+				<input type="checkbox" name="amigo">
+				<label for="agencia">Agencia</label>
+				<input type="checkbox" name="agencia">
+				<label for="otro_i">Otro</label>
+				<input type="checkbox" name="otro_i">
+				<label for="recomendacion">Lo recomienda alguien que trabaja en esta empresa</label>
+				<label for="si_re">Si</label>
+				<input type="checkbox" name="si_re">
+				<label for="no_re">No</label>
+				<input type="checkbox" name="no_re">
+				Nombre de la persona que lo recomienda:<input type="text" name="recomienda">
+				Division o departamento:<input type="text" name="division">
+				Si tiene parientes en esta empresa mencionelos:<input type="text" name="parientes1">
+				Firma del solicitante:<input type="text" name="solicitante">
+			</div>
+
+			<h1>ADMINISTRACION PROCESO DE SELECCION</h1>(Espacio exclusivo para el empleado)
+
+			<div class="content">
+				Concepto primer entrevistador
+				<textarea name="concepto" rows="4" cols="50"></textarea>
+				Vo Bo como candidato firma:<input type="text" name="Vo">
+				Fecha:<input type="text" name="Fecha0_1">
+				Concepto primer entrevistador
+				<textarea name="concepto" rows="4" cols="50"></textarea>
+				Vo Bo como candidato firma:<input type="text" name="Vo1">
+				Fecha:<input type="text" name="Fecha001">
+				Coclusiones
+				<textarea name="conclusiones" rows="4" cols="50">
+				</textarea>
+				Fecha:<input type="date" name="fecha0001">
+				<label for="aceptado">Candidato seleccionado definitivamente</label>
+				<label for="si_a">Si</label>
+				<input type="checkbox" name="si_a">
+				<label for="no_a">No</label>
+				<input type="checkbox" name="no_a">
+				Contratese a partir de:<input type="text" name="Contratese">
+				<input type="text" name="sueldo_a" placeholder="$">
+				<label for="aceptado">Candidato elegible proximamente</label>
+				<label for="si_e">Si</label>
+				<input type="checkbox" name="si_e">
+				<label for="no_e">No</label>
+				<input type="checkbox" name="no_e">
+				Cargo:<input type="text" name="Cargo002">
+				Tipo de contrato:<input type="text" name="Tipo01">
+				Referencias verificadas por:<input type="text" name="fechacontra">
+				Primer entrevistador:<input type="text" name="primerentrev">
+				Segndo entrevistador:<input type="text" name="segundoentrev">
+				Firma de quien utoriza:<input type="text" name="firmaentrev">
+			</div>
+
+			<form method="get" action="procesar.php">
+				<input type="submit" class="enviar" value="Enviar">
+			</form>
+		</div>
+	</body>
+	</html>

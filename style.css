@@ -1,0 +1,47 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background: url(img/8.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+}
+h1 {
+	text-align: center;
+}
+div.foto {
+	display: inline-block;
+	width: 150px;
+	height: 187px;
+	border: solid;
+	margin-left: 600px;
+	margin-bottom: 20px;
+
+}
+div.content1{
+	margin-left: 100px;
+	padding: 10px;
+	border: solid;
+	margin-right: 20px;
+	display: -webkit-inline-box;
+
+}
+div.content2 {
+	margin-left: 10px;
+	padding: 10px;
+	border: solid;
+	margin-right: 10px;
+}
+
+form {
+	display: inline-block;
+	border: solid;
+
+}
+.content {
+	display: inline-block;
+	border: solid;
+	padding: 10px;
+	margin: 10px;
+}
